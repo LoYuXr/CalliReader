@@ -13,4 +13,4 @@ For a folder with multiple images, use
 ```
 python inference.py --tgt=<folder path>  --save_name=<your save name>
 ```
-and results will be saved to ```<your save name>.json```.
+and results will be saved to ```./results/<your save name>.json```.
