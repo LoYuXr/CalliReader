@@ -50,10 +50,10 @@ If you encounter certain problems with this package, you can download .whl file 
 ```
 pip install flash_attn-xxx.whl
 ```
-Please note that this package only supports Linux systems with CUDA installed and needs to match the version. Further issues about ```flash-attn```, please turn to its [repository](https://github.com/Dao-AILab/flash-attention) for help. 
+Please note that this package only supports Linux systems with CUDA installed, and all of their versions should be matched. For further issues about ```flash-attn```, please turn to its [repository](https://github.com/Dao-AILab/flash-attention) for help. 
 
 ### 1. Inference
-We have verified that ```.jpg``` and ```.png``` format images are well supported in CalliReader.
+We have verified that ```.jpg``` and ```.png``` format images are well supported.
 
 1. For a single image, use
 ```
@@ -61,7 +61,7 @@ python inference.py --tgt=<image path>
 ```
 The result will be output directly in the terminal.
 
-2. For a folder with multiple images, use
+1. For a folder with multiple images, use
 ```
 python inference.py --tgt=<folder path>  --save_name=<your save name>
 ```
