@@ -9,7 +9,7 @@ an Embedding-aligned Vision Language Model</b>
     <a href="your arxiv here" target="_blank">
     <img src="https://img.shields.io/badge/Paper-ArXiv-red" alt="Paper arXiv"></a>
     <a href="your page here" target="_blank">
-    <img src="https://img.shields.io/badge/Page-CalliRearder-blue" alt="Project Page"/></a>
+    <img src="https://img.shields.io/badge/Page-CalliReader-blue" alt="Project Page"/></a>
     <a href="your pdf here" target="_blank">
     <img src="https://img.shields.io/badge/Lab-Link-green" alt="Lab Link"></a>
 </div>
@@ -52,17 +52,8 @@ pip install flash_attn-xxx.whl
 ```
 Please note that this package only supports Linux systems with CUDA installed and needs to match the version. Further issues about ```flash-attn```, please turn to its [repository](https://github.com/Dao-AILab/flash-attention) for help. 
 
-
-
-For a folder with multiple images, use
-```
-python inference.py --tgt=<folder path>  --save_name=<your save name>
-```
-and results will be saved to ```./results/<your save name>.json```.
-
 ### 1. Inference
-```.jpg``` and ```.png``` format images are well supported in CalliReader.
-
+We have verified that ```.jpg``` and ```.png``` format images are well supported in CalliReader.
 
 1. For a single image, use
 ```
