@@ -28,7 +28,7 @@ For more information, please visit our [**project page**](https://your_page_here
 - **2025.2.12** The repository has been updated.
 
 ## How to Use Our Code and Model:
-We are releasing our network and checkpoints. The weights for the plug-and-play modules and CalliReader+e-IT are stored in [**this repository**](https://drive_to_params_and_models). You can download and unzip them respectively. You should put the folder ```params``` in the main directory, and copy all files (end with ```.safetensors```) from the folder ```ckpts``` to the folder ```InternVL```.
+We are releasing our network and checkpoints. All plug-and-play modules can be downloaded [**here**](https://drive.google.com/file/d/1tZxMAACSEICF-lfEZRIFRnnP_Udw-TAU/view?usp=drive_link). You should put the folder ```params``` in th main directory. You can download weights of our CalliReader+e-IT from this and [**link**](https://huggingface.co/gtang666/CalliReader_eval/tree/main). Only files that end with ```.safetensors``` are required and should be put into the folder ```InternVL```.
 
 You can setup the pipeline under the following guidance.
 
@@ -61,7 +61,7 @@ python inference.py --tgt=<image path>
 ```
 The result will be output directly in the terminal.
 
-1. For a folder with multiple images, use
+2. For a folder with multiple images, use
 ```
 python inference.py --tgt=<folder path>  --save_name=<your save name>
 ```
