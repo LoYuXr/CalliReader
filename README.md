@@ -28,7 +28,7 @@ For more information, please visit our [**project page**](https://your_page_here
 - **2025.2.12** The repository has been updated.
 
 ## How to Use Our Code and Model:
-We are releasing our network and checkpoints. All plug-and-play modules can be downloaded [**here**](https://drive.google.com/file/d/1tZxMAACSEICF-lfEZRIFRnnP_Udw-TAU/view?usp=drive_link). You should put the folder ```params``` in th main directory. You can download weights of our CalliReader+e-IT from this and [**link**](https://huggingface.co/gtang666/CalliReader_eval/tree/main). Only files that end with ```.safetensors``` are required and should be put into the folder ```InternVL```.
+We are releasing our network and checkpoints. All plug-and-play modules can be downloaded [**here**](https://drive.google.com/file/d/1tZxMAACSEICF-lfEZRIFRnnP_Udw-TAU/view?usp=drive_link). You should put the folder ```params``` in the main directory. You can download weights of our CalliReader+e-IT from this and [**link**](https://huggingface.co/gtang666/CalliReader_eval/tree/main). Only files that end with ```.safetensors``` are required and should be put into the folder ```InternVL```.
 
 You can setup the pipeline under the following guidance.
 
