@@ -8,7 +8,6 @@ from tqdm import tqdm
 import shutil
 import torch
 import torchvision.transforms as T
-from decord import VideoReader, cpu
 from PIL import Image, ImageOps
 from torchvision.transforms.functional import InterpolationMode
 import re

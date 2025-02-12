@@ -2,8 +2,9 @@ import cv2
 import numpy as np
 from PIL import Image
 from concurrent.futures import ThreadPoolExecutor
-from models.model import load_perceiver_resampler, load_perceiver_resampler_2,load_pretrained_resampler,load_pretrained_resampler,load_normed_tok_embeddings,load_orderformer
-from models.similarity import vq_cos_sim
+from config.configu import *
+from models.model import *
+from models.similarity import *
 from sklearn.cluster import KMeans
 from utils.utils import *
 import warnings
@@ -24,8 +25,6 @@ from .configuration_internvl_chat import InternVLChatConfig
 from .conversation import get_conv_template
 from .modeling_intern_vit import InternVisionModel
 from .modeling_internlm2 import InternLM2ForCausalLM
-
-from config.configu import *
 
 logger = logging.get_logger(__name__)
 

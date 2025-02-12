@@ -3,14 +3,14 @@ import os
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-# 路径配置
-VIT_MODEL_PATH = '/home/luoyx/InternVL/CalliReader/params/vit_model.pt'
-MLP1_PATH = '/home/luoyx/InternVL/CalliReader/params/params/mlp1.pth'
-TOK_EMBEDDING_PATH = '/home/luoyx/InternVL/CalliReader/params/token_embedding.pth'
+
+VIT_MODEL_PATH = './params/vit_model.pt'
+MLP1_PATH = './params/params/mlp1.pth'
+TOK_EMBEDDING_PATH = './params/token_embedding.pth'
 TOKENIZER_PATH = 'InternVL'
-NORM_PARAMS_PATH='/home/luoyx/InternVL/CalliReader/params/gauss_norm_mu_sigma.pth'
-NORM_TOK_EMBEDDING_PATH='/home/luoyx/InternVL/CalliReader/params/gauss_norm.pth'
-NEW_1000_TOK_EMBEDDING_PATH='/home/luoyx/InternVL/CalliReader/params/new1000_token_embedding.pth'
+NORM_PARAMS_PATH='./params/gauss_norm_mu_sigma.pth'
+NORM_TOK_EMBEDDING_PATH='./params/gauss_norm.pth'
+NEW_1000_TOK_EMBEDDING_PATH='./params/new1000_token_embedding.pth'
 INTERNVL_PATH='InternVL'
 
 
@@ -56,7 +56,7 @@ WORLD_SIZE = torch.cuda.device_count()
 # LOAD CHECKPOINT AND RESUME TRAINING
 # PERCEIVER_CHECKPOINT ="/home/luoyx/InternVL/CalliReader/params/perceiver_4_n01_1e-4_new.pth"
 # RESUME = 26500
-PERCEIVER_CHECKPOINT ='/home/luoyx/InternVL/CalliReader/params/callialign.pth'
+PERCEIVER_CHECKPOINT ='./params/callialign.pth'
 RESUME = 50000
-ORDERFORMER_CHECKPOINT='/home/luoyx/InternVL/CalliReader/params/orderformer.pth'
-YOLO_CHECKPOINT="/home/luoyx/InternVL/CalliReader/params/best.pt"
+ORDERFORMER_CHECKPOINT='./params/orderformer.pth'
+YOLO_CHECKPOINT="./params/best.pt"

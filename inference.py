@@ -128,6 +128,41 @@ def main():
                    args.verbose)
     else:
         raise ValueError(f"The target should be either a image path or a folder that contain images!")
+
+def single_image_wrapped(image,prompts):
+    model = AutoModel.from_pretrained(
+            INTERNVL_PATH,
+            torch_dtype=torch.bfloat16,
+            low_cpu_mem_usage=True,
+            trust_remote_code=True).eval().cuda()
+    tokenizer = AutoTokenizer.from_pretrained(INTERNVL_PATH, trust_remote_code=True)
+
+    generation_config = dict(
+            num_beams=1,
+            max_new_tokens=1024,
+            do_sample=False,
+        )
+    detect_model=YOLO(YOLO_CHECKPOINT)
+
+
+    temp_dir = "temp_images"
+    os.makedirs(temp_dir, exist_ok=True)
+    
+    # 获取图片的文件名，并保存
+    temp_image_path = os.path.join(temp_dir, "uploaded_image.png")
+    image.save(temp_image_path)
+    single_rec(
+                    model,
+                    tokenizer,
+                    detect_model,
+                    generation_config,
+                    temp_image_path,
+                    prompts,
+                    True,
+                    False,
+                    True,
+                    1.2,
+                    False)
 if __name__=='__main__':
 
     main()

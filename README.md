@@ -1,16 +1,88 @@
-# CalliReader
-Official repository for CalliReader: Deciphering Chinese Calligraphy via an Embedding-aligned Vision Language Model
+<h2 align="center">
+  <b>CalliReader<img src="imgs\logo.png" alt="Image" width="30" height="30">: Deciphering Chinese Calligraphy via
+an Embedding-aligned Vision Language Model</b>
 
-## Inference
-Please first download the params.zip and unzip it to get a ```params``` folder, and download finetuned InternVL model weights into ```InternVL``` folder.
+  <b><i>CVPR 2025</i></b>
 
-For a single image, use
+
+<div align="center">
+    <a href="your arxiv here" target="_blank">
+    <img src="https://img.shields.io/badge/Paper-ArXiv-red" alt="Paper arXiv"></a>
+    <a href="your page here" target="_blank">
+    <img src="https://img.shields.io/badge/Page-CalliRearder-blue" alt="Project Page"/></a>
+    <a href="your pdf here" target="_blank">
+    <img src="https://img.shields.io/badge/Lab-Link-green" alt="Lab Link"></a>
+</div>
+</h2>
+
+This is the repository of [**CalliReader: Deciphering Chinese Calligraphy via
+an Embedding-aligned Vision Language Model**](http://your_pdf_here.pdf).
+
+CalliReader is a novel plug-and-play Vision-Language Model (VLM) specifically designed to interpret calligraphic artworks with diverse styles and layouts, leveraging slicing priors, embedding alignment, and effective fine-tuning. It demonstrates remarkable performances on Chinese Calligraphy recognition and understanding, while also retains excellent OCR ability on general scenes.
+
+For more information, please visit our [**project page**](https://your_page_here/).
+
+![teaser](imgs/teaser.png)
+
+## 📬 News
+- **2025.2.12** The repository has been updated.
+
+## How to Use Our Code and Model:
+We are releasing our network and checkpoints. The weights for the plug-and-play modules and CalliReader+e-IT are stored in [**this repository**](https://drive_to_params_and_models). You can download and unzip them respectively. You should put the folder ```params``` in the main directory, and copy all files (end with ```.safetensors```) from the folder ```ckpts``` to the folder ```InternVL```.
+
+You can setup the pipeline under the following guidance.
+
+### 0. Install dependencies
+1. We recommend creating a conda environment with Python>=3.9 and activate it:
 ```
-python inference.py --tgt=<image path> 
+conda create -n callireader python=3.9
+conda activate callireader
 ```
+2. Then, install essential dependencies:
+```
+pip install requirements.txt
+```
+3. Finally, install the package ```flash-attn```:
+```
+pip install flash-attn
+```
+If you encounter certain problems with this package, you can download .whl file [here](https://github.com/Dao-AILab/flash-attention/releases) for direct installation:
+```
+pip install flash_attn-xxx.whl
+```
+Please note that this package only supports Linux systems with CUDA installed and needs to match the version. Further issues about ```flash-attn```, please turn to its [repository](https://github.com/Dao-AILab/flash-attention) for help. 
+
+
 
 For a folder with multiple images, use
 ```
 python inference.py --tgt=<folder path>  --save_name=<your save name>
 ```
 and results will be saved to ```./results/<your save name>.json```.
+
+### 1. Inference
+```.jpg``` and ```.png``` format images are well supported in CalliReader.
+
+
+1. For a single image, use
+```
+python inference.py --tgt=<image path> 
+```
+The result will be output directly in the terminal.
+
+2. For a folder with multiple images, use
+```
+python inference.py --tgt=<folder path>  --save_name=<your save name>
+```
+Results will be saved to ```./results/<your save name>.json```.
+
+## Citation
+```
+@article{luo2025callireader,
+  title={CalliReader: Deciphering Chinese Calligraphy via
+  an Embedding-aligned Vision Language Model},
+  author={Luo, Yuxuan and Tang, Jiaqi and Huang, Chenyi and Hao, Feiyang and Lian, Zhouhui},
+  journal={arXiv preprint arXiv:xxxxxxx},
+  year={2025}
+}
+```
