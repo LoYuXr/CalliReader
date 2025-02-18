@@ -2,7 +2,6 @@
   <b>CalliReader<img src="imgs\logo.png" alt="Image" width="30" height="30">: Deciphering Chinese Calligraphy via
 an Embedding-aligned Vision Language Model</b>
 
-  <b><i>CVPR 2025</i></b>
 
 
 <div align="center">
