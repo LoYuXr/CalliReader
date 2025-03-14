@@ -1,5 +1,5 @@
 <h2 align="center">
-  <b>CalliReader<img src="imgs\logo.png" alt="Image" width="30" height="30">: Deciphering Chinese Calligraphy via
+  <b>CalliReader<img src="imgs\logo.png" alt="Image" width="30" height="30">: Contextualizing Chinese Calligraphy via
 an Embedding-aligned Vision Language Model</b>
 
 
@@ -69,10 +69,9 @@ Results will be saved to ```./results/<your save name>.json```.
 ## Citation
 ```
 @article{luo2025callireader,
-  title={CalliReader: Deciphering Chinese Calligraphy via
-  an Embedding-aligned Vision Language Model},
+  title={CalliReader: Contextualizing Chinese Calligraphy via an Embedding-Aligned Vision-Language Model},
   author={Luo, Yuxuan and Tang, Jiaqi and Huang, Chenyi and Hao, Feiyang and Lian, Zhouhui},
-  journal={arXiv preprint arXiv:xxxxxxx},
+  journal={arXiv preprint arXiv:2503.06472},
   year={2025}
 }
 ```
