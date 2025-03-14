@@ -7,7 +7,7 @@ an Embedding-aligned Vision Language Model</b>
 <div align="center">
     <a href="your arxiv here" target="_blank">
     <img src="https://img.shields.io/badge/Paper-ArXiv-red" alt="Paper arXiv"></a>
-    <a href="your page here" target="_blank">
+    <a href="https://arxiv.org/pdf/2503.06472" target="_blank">
     <img src="https://img.shields.io/badge/Page-CalliReader-blue" alt="Project Page"/></a>
     <a href="your pdf here" target="_blank">
     <img src="https://img.shields.io/badge/Lab-Link-green" alt="Lab Link"></a>
@@ -15,7 +15,7 @@ an Embedding-aligned Vision Language Model</b>
 </h2>
 
 This is the repository of [**CalliReader: Contextualizing Chinese Calligraphy via
-an Embedding-aligned Vision Language Model**](http://your_pdf_here.pdf).
+an Embedding-aligned Vision Language Model**](https://arxiv.org/pdf/2503.06472).
 
 CalliReader is a novel plug-and-play Vision-Language Model (VLM) specifically designed to interpret calligraphic artworks with diverse styles and layouts, leveraging slicing priors, embedding alignment, and effective fine-tuning. It demonstrates remarkable performances on Chinese Calligraphy recognition and understanding, while also retains excellent OCR ability on general scenes.
 
