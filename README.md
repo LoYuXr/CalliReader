@@ -7,7 +7,7 @@ an Embedding-aligned Vision Language Model</b>
 <div align="center">
     <a href="your arxiv here" target="_blank">
     <img src="https://img.shields.io/badge/Paper-ArXiv-red" alt="Paper arXiv"></a>
-    <a href="https://arxiv.org/pdf/2503.06472" target="_blank">
+    <a href="[https://arxiv.org/pdf/2503.06472](https://arxiv.org/pdf/2503.06472)" target="_blank">
     <img src="https://img.shields.io/badge/Page-CalliReader-blue" alt="Project Page"/></a>
     <a href="your pdf here" target="_blank">
     <img src="https://img.shields.io/badge/Lab-Link-green" alt="Lab Link"></a>
