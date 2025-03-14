@@ -14,7 +14,7 @@ an Embedding-aligned Vision Language Model</b>
 </div>
 </h2>
 
-This is the repository of [**CalliReader: Deciphering Chinese Calligraphy via
+This is the repository of [**CalliReader: Contextualizing Chinese Calligraphy via
 an Embedding-aligned Vision Language Model**](http://your_pdf_here.pdf).
 
 CalliReader is a novel plug-and-play Vision-Language Model (VLM) specifically designed to interpret calligraphic artworks with diverse styles and layouts, leveraging slicing priors, embedding alignment, and effective fine-tuning. It demonstrates remarkable performances on Chinese Calligraphy recognition and understanding, while also retains excellent OCR ability on general scenes.
