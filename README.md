@@ -21,7 +21,7 @@ CalliReader is a novel plug-and-play Vision-Language Model (VLM) specifically de
 
 For more information, please visit our [**project page**](https://your_page_here/).
 
-![teaser](imgs/teaser.png)
+![teaser](imgs/teaser.jpg)
 
 ## 📬 News
 - **2025.2.12** The repository has been updated.
