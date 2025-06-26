@@ -24,6 +24,8 @@ For more information, please visit our [**project page**](https://your_page_here
 ![teaser](imgs/teaser.jpg)
 
 ## 📬 News
+- **2025.6.25** Our work has been accepted by ICCV 2025!
+- **2025.6.25** Our newest model can be downloaded [here](https://huggingface.co/gtang666/CalliReader).
 - **2025.2.12** The repository has been updated.
 
 ## How to Use Our Code and Model:
