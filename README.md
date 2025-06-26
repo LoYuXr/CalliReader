@@ -19,17 +19,17 @@ an Embedding-aligned Vision Language Model**](https://arxiv.org/pdf/2503.06472).
 
 CalliReader is a novel plug-and-play Vision-Language Model (VLM) specifically designed to interpret calligraphic artworks with diverse styles and layouts, leveraging slicing priors, embedding alignment, and effective fine-tuning. It demonstrates remarkable performances on Chinese Calligraphy recognition and understanding, while also retains excellent OCR ability on general scenes.
 
-For more information, please visit our [**project page**](https://your_page_here/).
+For more information, please visit our [**project page**](https://your_page_here/)    (Unfinished).
 
 ![teaser](imgs/teaser.jpg)
 
 ## 📬 News
 - **2025.6.25** Our work has been accepted by ICCV 2025!
-- **2025.6.25** Our newest model can be downloaded [here](https://huggingface.co/gtang666/CalliReader).
+- **2025.6.25** Our newest model is released in HuggingFace.
 - **2025.2.12** The repository has been updated.
 
 ## How to Use Our Code and Model:
-We are releasing our network and checkpoints. All plug-and-play modules can be downloaded [**here**](https://drive.google.com/file/d/1tZxMAACSEICF-lfEZRIFRnnP_Udw-TAU/view?usp=drive_link). You should put the folder ```params``` in the main directory. You can download weights of our CalliReader+e-IT from this and [**link**](https://huggingface.co/gtang666/CalliReader_eval/tree/main). Only files that end with ```.safetensors``` are required and should be put into the folder ```InternVL```.
+We are releasing our network and checkpoints. All plug-and-play modules can be downloaded [**here**](https://drive.google.com/file/d/1tZxMAACSEICF-lfEZRIFRnnP_Udw-TAU/view?usp=drive_link). You should put the folder ```params``` in the main directory. You can download weights of our CalliReader+e-IT from this [**link**](https://huggingface.co/gtang666/CalliReader/tree/main/InternVL). Only files that end with ```.safetensors``` are required and should be put into the folder ```InternVL```.
 
 You can setup the pipeline under the following guidance.
 
