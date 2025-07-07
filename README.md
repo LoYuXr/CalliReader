@@ -29,7 +29,7 @@ For more information, please visit our [**project page**](https://your_page_here
 - **2025.2.12** The repository has been updated.
 
 ## How to Use Our Code and Model:
-We are releasing our network and checkpoints. All plug-and-play modules can be downloaded [**here**](https://drive.google.com/file/d/1tZxMAACSEICF-lfEZRIFRnnP_Udw-TAU/view?usp=drive_link). You should put the folder ```params``` in the main directory. You can download weights of our CalliReader+e-IT from this [**link**](https://huggingface.co/gtang666/CalliReader/tree/main/InternVL). Only files that end with ```.safetensors``` are required and should be put into the folder ```InternVL```.
+We are releasing our network and checkpoints. You can download weights of our CalliReader from this [**HuggingFace  link**](https://huggingface.co/gtang666/CalliReader/tree/main). VLM weight files that end with ```.safetensors``` are stored in the folder ```InternVL```, and all pluggable modules can be found in the folder ```params```. You can download those files and put them in the same folder of the cloned repository.
 
 You can setup the pipeline under the following guidance.
 
