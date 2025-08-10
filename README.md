@@ -77,7 +77,7 @@ Data of 7,357 samples for e-IT can be downloaded in this [**link**](https://hugg
 
 
 ### 3. Training
-Please refer to the **train** folder for further instructions. 
+Please refer to the **[train](https://github.com/LoYuXr/CalliReader/tree/main/train)** folder for further instructions. 
 
 
 ## Citation
