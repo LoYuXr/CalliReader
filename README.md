@@ -24,6 +24,7 @@ For more information, please visit our [**project page**](https://your_page_here
 ![teaser](imgs/teaser.jpg)
 
 ## 📬 News
+- **2025.8.10** We are releasing our training scripts.
 - **2025.6.26** Our newest model is now available on HuggingFace.
 - **2025.6.25** Our work has been accepted by ICCV 2025!
 - **2025.2.12** The repository has been updated.
@@ -73,6 +74,10 @@ Results will be saved to ```./results/<your save name>.json```.
 Data of three tiers (easy, medium, hard) of Full-page Recognition can be downloaded in this [**link**](https://huggingface.co/datasets/gtang666/CalliBench). It contains 3,192 samples in total. We will further update other components of our CalliBench.
 #### Training data
 Data of 7,357 samples for e-IT can be downloaded in this [**link**](https://huggingface.co/datasets/gtang666/CalliTrain).
+
+
+### 3. Training
+Please refer to the **train** folder for further instructions. 
 
 
 ## Citation
