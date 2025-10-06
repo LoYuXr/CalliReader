@@ -511,3 +511,32 @@ def is_image(file_path):
     except:
         return False
  
+def cmp(a,b):
+    return a==b
+def calculate_metrics(y_pred,y_gt,cmp=cmp):
+    if isinstance(y_pred,torch.Tensor):
+        y_pred=y_pred.detach().cpu().numpy()
+        y_gt=y_gt.detach().cpu().numpy()
+    matched_true=set()
+    TP=0
+    FP=0
+    FN=0
+
+
+    for p in y_pred:
+            matched=False
+            for i,g in enumerate(y_gt):
+                if cmp(p,g):
+                    if i not in matched_true:
+                        matched_true.add(i)
+                        TP+=1
+                        matched=True
+                        break
+            if matched==False:
+                    FP+=1
+    FN+=len(y_gt)-TP
+    precision = TP / (TP + FP) if TP + FP > 0 else 0
+    recall = TP / (TP + FN) if TP + FN > 0 else 0
+    f1_score = 2 * (precision * recall) / (precision + recall) if (precision + recall) > 0 else 0
+    
+    return precision,recall,f1_score
