@@ -70,8 +70,8 @@ python inference.py --tgt=<folder path>  --save_name=<your save name>
 Results will be saved to ```./results/<your save name>.json```.
 
 ### 2. Dataset
-#### Full-page Recognition
-Data of three tiers (easy, medium, hard) of Full-page Recognition can be downloaded in this [**link**](https://huggingface.co/datasets/gtang666/CalliBench). It contains 3,192 samples in total. We will further update other components of our CalliBench.
+#### CalliBench
+Data of **Full-page Recognition, Region-wise OCR, Choice Questions (Author, Style, and Layout), Bilingual Interpretation, and Intent Analysis** can be downloaded in this [**link**](https://huggingface.co/datasets/gtang666/CalliBench). It contains 3,192 image-annotation samples in total, and we use them to construct our CalliBench.
 #### Training data
 Data of 7,357 samples for e-IT can be downloaded in this [**link**](https://huggingface.co/datasets/gtang666/CalliTrain).
 
