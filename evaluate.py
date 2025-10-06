@@ -382,15 +382,13 @@ def test_intent(parquet_path,save_json_path,model,tokenizer,detect_model,generat
         json.dump(to_be_save, f, ensure_ascii=False, indent=4)
 
 
-
-
-
 def main():
     parser = argparse.ArgumentParser(description="args for inference task")
 
-    parser.add_argument('--type', type=str,help='Evaluation Type')
+    parser.add_argument('--type', type=str, choices=['full_page', 'region_wise', 'choice', 'bilingual', 'intent'], 
+                   help='Evaluation Type (full_page, region_wise, choice, bilingual, intent)')
     parser.add_argument('--save_name',type=str,default="exp",help="Storage of results if multiple images recognition mode")
-    parser.add_argument('--data', type=str,default='/home/luoyx/tmp/CalliBench',help='Evaluation Data Directory')
+    parser.add_argument('--data', type=str,default='./CalliBench',help='Evaluation Data Directory')
 
     parser.add_argument('--use_p', type=bool, default=True,help='Decide the usage of perceiver resampler')
     parser.add_argument('--hard_vq', type=bool, default=False,help='Decide the usage of closest similarity match')

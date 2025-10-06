@@ -11,6 +11,9 @@ an Embedding-aligned Vision Language Model</b>
     <img src="https://img.shields.io/badge/Page-CalliReader-blue" alt="Project Page"/></a>
     <a href="your pdf here" target="_blank">
     <img src="https://img.shields.io/badge/Lab-Link-green" alt="Lab Link"></a>
+    <a href="https://huggingface.co/datasets/gtang666/CalliBench" target="_blank">
+        <img src="https://img.shields.io/badge/Data-Huggingface-yellow" alt="HF Data">
+    </a>
 </div>
 </h2>
 
@@ -80,6 +83,18 @@ Data of 7,357 samples for e-IT can be downloaded in this [**link**](https://hugg
 ### 3. Training
 Please refer to the **[train](https://github.com/LoYuXr/CalliReader/tree/main/train)** folder for further instructions. 
 
+
+### 4. Evaluation
+Run ``evaluate.py`` to assess the model on our CalliBench. You should first download the dataset and then run
+
+```
+python evaluate.py --type=<Eval type> --data=<CalliBench path> --save_name=<Test name>
+```
+to evaluate the model on various Calligraphy-related tasks. For example, run
+```
+python evaluate.py --type=full_page --data=./Callibench --save_name=exp
+```
+to test the model on full-page recognition task.
 
 ## Citation
 ```
