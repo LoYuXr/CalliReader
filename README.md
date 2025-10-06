@@ -24,6 +24,7 @@ For more information, please visit our [**project page**](https://your_page_here
 ![teaser](imgs/teaser.jpg)
 
 ## 📬 News
+- **2025.10.6** We are releasing our CalliBench.
 - **2025.8.10** We are releasing our training scripts.
 - **2025.6.26** Our newest model is now available on HuggingFace.
 - **2025.6.25** Our work has been accepted by ICCV 2025!
