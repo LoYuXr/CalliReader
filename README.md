@@ -96,6 +96,8 @@ python evaluate.py --type=full_page --data=./Callibench --save_name=exp
 ```
 to test the model on full-page recognition task.
 
+For bilingual interpretation and intent analysis tasks, please refer to **[train](https://github.com/LoYuXr/CalliReader/tree/main/train)** folder for example codes.
+
 ## Citation
 ```
 @article{luo2025callireader,

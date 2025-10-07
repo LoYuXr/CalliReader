@@ -341,7 +341,9 @@ def test_bilingual(parquet_path,save_json_path,model,tokenizer,detect_model,gene
                                 hard_vq=hard_vq,
                                 drop_zero=drop_zero,repetition_penalty=repetition_penalty,return_history=True,verbose=verbose,history=history)
         reference=annot['conversations'][-1]['value']
-        to_be_save['detailed'].append({"imgPath":annot['image'],"output":response.split('ENGLISH:')[-1],"reference":reference})
+        chinese=response.split("INTENT:")[0]
+        answer=response.split("INTENT:")[-1]
+        to_be_save['detailed'].append({"imgPath":annot['image'],"chinese":chinese,"answer":answer,"gt":reference})
 
     
     with open(save_json_path, 'w', encoding='utf-8') as f:
@@ -375,7 +377,9 @@ def test_intent(parquet_path,save_json_path,model,tokenizer,detect_model,generat
                                 hard_vq=hard_vq,
                                 drop_zero=drop_zero,repetition_penalty=repetition_penalty,return_history=True,verbose=verbose,history=history)
         reference=annot['conversations'][-1]['value']
-        to_be_save['detailed'].append({"imgPath":annot['image'],"output":response.split("INTENT:")[-1],"reference":reference})
+        chinese=response.split("INTENT:")[0]
+        answer=response.split("INTENT:")[-1]
+        to_be_save['detailed'].append({"imgPath":annot['image'],"chinese":chinese,"answer":answer,"gt":reference,"calligraphy_content":annot['content']})
 
     
     with open(save_json_path, 'w', encoding='utf-8') as f:
