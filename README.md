@@ -100,10 +100,12 @@ For bilingual interpretation and intent analysis tasks, please refer to **[train
 
 ## Citation
 ```
-@article{luo2025callireader,
-  title={CalliReader: Contextualizing Chinese Calligraphy via an Embedding-Aligned Vision-Language Model},
-  author={Luo, Yuxuan and Tang, Jiaqi and Huang, Chenyi and Hao, Feiyang and Lian, Zhouhui},
-  journal={arXiv preprint arXiv:2503.06472},
-  year={2025}
+@InProceedings{Luo_2025_ICCV,
+    author    = {Luo, Yuxuan and Tang, Jiaqi and Huang, Chenyi and Hao, Feiyang and Lian, Zhouhui},
+    title     = {CalliReader: Contextualizing Chinese Calligraphy via an Embedding-Aligned Vision-Language Model},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2025},
+    pages     = {23030-23040}
 }
 ```
